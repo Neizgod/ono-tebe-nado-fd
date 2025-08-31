@@ -10,7 +10,7 @@
   width: 148px;
 }
 
-.header-link-active {
+.link-active {
   text-decoration: none;
 }
 address {
@@ -29,6 +29,7 @@ address {
   gap: 30px;
   list-style: circle;
 }
+
 .element-without-liststyle {
   list-style: none;
 }
@@ -94,11 +95,10 @@ address {
   padding: 12px 32px 11px 31px;
   font-weight: 500;
   text-transform: uppercase;
-
-
+  cursor: pointer;
 }
 .lots {
-  
+  margin-bottom: 120px;
 }
 
 .lots-title{
@@ -109,7 +109,9 @@ address {
 .lots-list{
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
+  margin-bottom: 30px;
 }
 
 .lot{
@@ -118,10 +120,7 @@ address {
   background-size: cover;
   background-position: center;
   color: #ffffff;
-  padding: 48px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  position: relative;
 }
 
 .lot-film{
@@ -136,21 +135,72 @@ address {
   background-image: url('../images/card-lot-03.jpg');
 }
 
-.lot-span-header{
+.lot-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px;
+  height: 100%;
+}
+
+.lot-link{
   text-transform: uppercase;
   font-size: 22px;
   font-weight: 700;
   line-height: 120%;
-  
+  height: 100%;
 }
 
 .lot-article{
   font-size: 20px;
   line-height: 120%;
 }
-.lot-article a{
-  text-decoration: none;
+
+.lost-link-getmore{
+  margin-left: 40px;
 }
 
 .about {
+  display: grid;
+  grid-template-columns: 334px auto;
+  justify-items: center;
+  margin-bottom: 180px;
+}
+
+.container-logo{
+  background-color: black;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-top: 35px;
+}
+
+.logo-white{
+  width: 148px;
+  height: 114px;
+}
+
+.about-column{
+  margin-top: 133px;
+}
+
+.about-title{
+  margin-bottom: 100px;
+}
+
+.about-text{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
 }

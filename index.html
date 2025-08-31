@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -14,7 +14,7 @@
       <nav>
         <ul class="header-menu">
           <li class="element-without-liststyle">
-            <a class="header-link-active" href="#">главная</a>
+            <a class="link-active" href="#">главная</a>
           </li>
           <li><a href="#lots">посмотреть лоты</a></li>
           <li><a href="#about">об аукционе</a></li>
@@ -51,57 +51,63 @@
         <h2 class="lots-title title">Лоты</h2>
         <ul class="lots-list">
           <li class="lot lot-film">
-              <a class="lot-span-header" href="#0">
-                Фильм режиссёра, который бросил киношколу
-              </a>
-              <article class="lot-article">
-                <a href="#0"
-                  >Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+            <div class="overlay">
+              <div class="lot-content">
+                <a class="lot-link" href="#0">
+                  Фильм режиссёра, который бросил киношколу
+                </a>
+                <article class="lot-article">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
-                  Андерсон?</a
-                >
-              </article>
+                  Андерсон?
+                </article>
+              </div>
+            </div>
           </li>
+
           <li class="lot lot-book">
-            <a href="#0"
-              ><span class="lot-span-header"
-                >Книга, где описан один скучный день из жизни рекламного
-                агента</span
-              >
-              <article class="lot-article">
-                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-                переходами на древнеанглийский. В ней одновременно
-                рассказывается о 16 июня 1904 года и об истории литературы,
-                начиная с античных времён. И это всё накладывается на эпическую
-                поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
-                Джойса?
-              </article>
-            </a>
+            <div class="overlay">
+              <div class="lot-content">
+                <a class="lot-link" href="#0">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </a>
+                <article class="lot-article">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </article>
+              </div>
+            </div>
           </li>
+
           <li class="lot lot-painting">
-            <a href="#0"
-              ><span class="lot-span-header"
-                >Картина, которую повторит даже 5-летний сын маминой
-                подруги</span
-              >
-              <article class="lot-article">
-                Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                котиков... Сколько бы вы на такое поставили, если бы не знали,
-                что это — одна из революционных работ Кандинского?
-              </article>
-            </a>
+            <div class="overlay">
+              <div class="lot-content">
+                <a class="lot-link" href="#0">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </a>
+                <article class="lot-article">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков... Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?
+                </article>
+              </div>
+            </div>
           </li>
         </ul>
-        <a href="#0">посмотреть больше</a>
+        <a class="lost-link-getmore" href="#0">посмотреть больше</a>
       </section>
       <section class="about" id="about">
-        <div>
-          <img src="images/logo-white.svg" alt="Белое лого Оно тебе надо " />
+        <div class="container-logo">
+          <img class="logo-white" src="images/logo-white.svg" alt="Белое лого Оно тебе надо " />
         </div>
-        <div>
-          <h2 class="title">Об аукционе</h2>
-          <div>
+        <div class="about-column">
+          <h2 class="about-title title">Об аукционе</h2>
+          <div class="about-text">
             <p>
               Здесь вы не встретите очередное пафосное собрание невероятно
               дорогого антиквариата. Наши лоты вообще не должны были попасть ни
@@ -124,13 +130,13 @@
     </main>
     <footer class="footer">
       <address>
-        <p>+9 999 555 5555</p>
-        <p>info@sobaka.ge</p>
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
       <nav>
         <ul>
-          <li><a href="#">главная</a></li>
+          <li><a class="link-active" href="#">главная</a></li>
           <li><a href="#lots">посмотреть лоты</a></li>
           <li><a href="#about">об аукционе</a></li>
         </ul>
