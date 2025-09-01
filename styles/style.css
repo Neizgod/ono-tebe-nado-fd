@@ -5,6 +5,7 @@
   padding: 92px 50px 96px;
   font-size: 18px;
 }
+
 .header-logo {
   height: 105px;
   width: 148px;
@@ -13,9 +14,11 @@
 .link-active {
   text-decoration: none;
 }
+
 address {
   font-style: normal;
 }
+
 .header-adress {
   display: flex;
   flex-wrap: wrap;
@@ -24,6 +27,7 @@ address {
   max-width: 240px;
   justify-self: end;
 }
+
 .header-menu {
   display: flex;
   gap: 30px;
@@ -74,7 +78,7 @@ address {
 }
 .aligned-text-right {
   align-self: end;
-  margin-right: -0.3em; /*Не знаю как по другому убрать у последнего символа  */
+  margin-right: -0.3em; /*Не знаю как по другому убрать пространство у последнего символа  */
 }
 
 .description{
@@ -86,7 +90,6 @@ address {
   justify-content: space-between;
   z-index: -1;
 }
-
 
 .description-button{
   background-color: transparent;
