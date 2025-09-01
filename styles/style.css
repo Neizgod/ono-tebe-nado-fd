@@ -7,8 +7,8 @@
 }
 
 .header-logo {
-  height: 105px;
   width: 148px;
+  height: 105px;
 }
 
 .link-active {
@@ -21,11 +21,12 @@ address {
 
 .header-adress {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-self: end;
   align-items: flex-start;
   max-width: 240px;
-  justify-self: end;
+  line-height: 24.3px;
 }
 
 .header-menu {
@@ -45,86 +46,88 @@ address {
 
 .cover {
   position: relative;
-  background-image: url("../images/cover.jpg");
   min-height: 757px;
-  background-size: cover;
-  color: #ffffff;
   margin-bottom: 180px;
+  color: #ffffff;
   text-transform: uppercase;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
+  z-index: 0;
   width: 100%;
   height: 100%;
   background-color: rgb(0 0 0/0.6);
-  z-index: 0;
 }
 
 .cover-header {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  margin: 165px 50px 106px;
-  font-size: 100px;
-  font-weight: bold;
-  letter-spacing: 0.3em;
+  justify-content: center;
   gap: 1rem;
+  margin: 165px 50px 106px;
+  font-weight: bold;
+  font-size: 100px;
+  letter-spacing: 0.3em;
 }
 
 .aligned-text-center {
   align-self: center;
 }
+
 .aligned-text-right {
   align-self: end;
   margin-right: -0.3em; /*Не знаю как по другому убрать пространство у последнего символа  */
 }
 
 .description{
-  display: flex;
-  font-size: 22px;
-  margin: 0 50px 50px;
-  word-spacing: 0.9em;
-  align-items: center;
-  justify-content: space-between;
   z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px 50px;
+  font-size: 22px;
+  word-spacing: 0.9em;
 }
 
 .description-button{
-  background-color: transparent;
   border: 1px solid #ffffff;
-  color: #ffffff;
   padding: 12px 32px 11px 31px;
+  color: #ffffff;
   font-weight: 500;
   text-transform: uppercase;
+  background-color: transparent;
   cursor: pointer;
 }
+
 .lots {
-  margin-left: 24px;
   margin-bottom: 120px;
+  margin-left: 24px;
 }
 
 .lots-title{
-  margin-left: 40px;
-  margin-bottom: 27px; 
+  margin-bottom: 27px;
+  margin-left: 40px; 
 }
 
 .lots-list{
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  list-style: none;
 }
 
 .lot{
+  position: relative;
   width: 334px;
   min-height: 596px;
-  background-size: cover;
-  background-position: center;
   color: #ffffff;
-  position: relative;
+  background-position: center;
+  background-size: cover;
 }
 
 .lot-film{
@@ -143,16 +146,16 @@ address {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 48px 40px;
   height: 100%;
+  padding: 48px 40px;
 }
 
 .lot-link{
-  text-transform: uppercase;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 120%;
   height: 100%;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-transform: uppercase;
 }
 
 .lot-article{
@@ -174,14 +177,14 @@ address {
 }
 
 .container-logo{
-  background-color: black;
-  width: 240px;
-  height: 240px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  width: 240px;
+  height: 240px;
   margin-top: 35px;
+  border-radius: 50%;
+  background-color: black;
 }
 
 .logo-white{
@@ -198,11 +201,11 @@ address {
 }
 
 .about-text{
-  font-size: 20px;
   display: flex;
   flex-direction: column;
   gap: 24px;
   max-width: 693px;
+  font-size: 20px;
 }
 
 .first-p{
@@ -215,6 +218,8 @@ address {
   align-items: start center;
   height: 180px;
   font-size: 18px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .footer-address{
@@ -222,20 +227,21 @@ address {
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 265px;
+  line-height: 24.3px;
 }
 
 .footer-nav-list{
-  list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
+  list-style: none;
 }
 
 .social-links{
-  list-style: none;
   display: flex;
-  gap: 48px;
   justify-content: end;
+  gap: 48px;
+  list-style: none;
 }
 
 .social-link{
