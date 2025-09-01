@@ -98,6 +98,7 @@ address {
   cursor: pointer;
 }
 .lots {
+  margin-left: 24px;
   margin-bottom: 120px;
 }
 
@@ -158,6 +159,7 @@ address {
 
 .lost-link-getmore{
   margin-left: 40px;
+  font-size: 20px;
 }
 
 .about {
@@ -165,6 +167,7 @@ address {
   grid-template-columns: 334px auto;
   justify-items: center;
   margin-bottom: 180px;
+  margin-left: 24px;
 }
 
 .container-logo{
@@ -196,11 +199,43 @@ address {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  max-width: 693px;
+}
+
+.first-p{
+  max-width: 688px;
 }
 
 .footer{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
+  align-items: start center;
+  height: 180px;
+  font-size: 18px;
+}
+
+.footer-address{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 265px;
+}
+
+.footer-nav-list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.social-links{
+  list-style: none;
+  display: flex;
+  gap: 48px;
+  justify-content: end;
+}
+
+.social-link{
+  width: 48px;
+  height: 48px;
 }
