@@ -11,7 +11,7 @@
   </head>
   <body>
     <header class="header">
-      <nav>
+      <nav class="header-nav">
         <ul class="header-menu">
           <li class="element-without-liststyle">
             <a class="link-active" href="#">главная</a>
@@ -27,7 +27,7 @@
           class="header-logo"
         />
       </a>
-      <address class="address header-adress">
+      <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
@@ -51,60 +51,67 @@
         <h2 class="lots-title title">Лоты</h2>
         <ul class="lots-list">
           <li class="lot lot-film">
-            <div class="overlay">
-              <div class="lot-content">
-                <a class="lot-link" href="#0">
-                  Фильм режиссёра, который бросил киношколу
-                </a>
+            <a href="#0">
+              <div class="overlay">
                 <article class="lot-article">
-                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                  ставка, если бы вы не знали, что режиссёр — Пол Томас
-                  Андерсон?
+                  <h3 class="lot-header">
+                    Фильм режиссёра, который бросил киношколу
+                  </h3>
+                  <p>
+                    Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                    ставка, если бы вы не знали, что режиссёр — Пол Томас
+                    Андерсон?
+                  </p>
                 </article>
               </div>
-            </div>
+            </a>
           </li>
 
           <li class="lot lot-book">
-            <div class="overlay">
-              <div class="lot-content">
-                <a class="lot-link" href="#0">
-                  Книга, где описан один скучный день из жизни рекламного агента
-                </a>
+            <a href="#0">
+              <div class="overlay">
                 <article class="lot-article">
-                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
-                  с переходами на древнеанглийский. В ней одновременно
-                  рассказывается о 16 июня 1904 года и об истории литературы,
-                  начиная с античных времён. И это всё накладывается на
-                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
-                  Джеймса Джойса?
+                  <h3 class="lot-header">
+                    Книга, где описан один скучный день из жизни рекламного
+                    агента
+                  </h3>
+                  <p>
+                    Объёмом почти в тысячу страниц. Иногда без знаков препинания
+                    и с переходами на древнеанглийский. В ней одновременно
+                    рассказывается о 16 июня 1904 года и об истории литературы,
+                    начиная с античных времён. И это всё накладывается на
+                    эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                    Джеймса Джойса?
+                  </p>
                 </article>
               </div>
-            </div>
+            </a>
           </li>
 
           <li class="lot lot-painting">
-            <div class="overlay">
-              <div class="lot-content">
-                <a class="lot-link" href="#0">
-                  Картина, которую повторит даже 5-летний сын маминой подруги
-                </a>
+            <a href="#0">
+              <div class="overlay">
                 <article class="lot-article">
-                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                  котиков... Сколько бы вы на такое поставили, если бы не знали,
-                  что это — одна из революционных работ Кандинского?
+                  <h3 class="lot-header">
+                    Картина, которую повторит даже 5-летний сын маминой подруги
+                  </h3>
+                  <p>
+                    Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                    что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                    котиков... Сколько бы вы на такое поставили, если бы не
+                    знали, что это — одна из революционных работ Кандинского?
+                  </p>
                 </article>
               </div>
-            </div>
+            </a>
           </li>
         </ul>
-        <a class="lost-link-getmore" href="#0">посмотреть больше</a>
+        <a class="lots-link-getmore" href="#0">посмотреть больше</a>
       </section>
       <section class="about" id="about">
         <div class="container-logo">
           <img
-            class="logo-white"
+            class="about-logo"
             src="images/logo-white.svg"
             alt="Белое лого Оно тебе надо "
           />
@@ -112,7 +119,7 @@
         <div class="about-column">
           <h2 class="about-title title">Об аукционе</h2>
           <div class="about-text">
-            <p class="first-p">
+            <p>
               Здесь вы не встретите очередное пафосное собрание невероятно
               дорогого антиквариата. Наши лоты вообще не должны были попасть ни
               на один аукцион. Потому что кому нужен дневник девочки-подростка
@@ -133,7 +140,8 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="footer-address">
+      <address class="address footer-adrress">
+        <!-- В адрессе в хедере и в футере есть отличия! -->
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
@@ -147,7 +155,7 @@
       </nav>
       <ul class="social-links">
         <li>
-          <a href="#0"
+          <a href="#0" target="_blank"
             ><img
               class="social-link"
               src="./images/yt.svg"
@@ -155,7 +163,7 @@
           /></a>
         </li>
         <li>
-          <a href="#0"
+          <a href="#0" target="_blank"
             ><img
               class="social-link"
               src="./images/vk.svg"
@@ -163,7 +171,7 @@
           /></a>
         </li>
         <li>
-          <a href="#0"
+          <a href="#0" target="_blank"
             ><img
               class="social-link"
               src="./images/pinterest.svg"
